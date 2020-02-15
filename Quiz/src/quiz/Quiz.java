@@ -34,11 +34,11 @@ public class Quiz {
             System.out.println("Digite a alternativa que você considerar correta: ");
             String alternativaEscolhida = scan.nextLine();
             
-            if(questao.getAlternativaCerta().equalsIgnoreCase(alternativaEscolhida)){
+            if(questao.getAlternativaCerta().equals(alternativaEscolhida)){
                 System.out.println("Correto.");
             }
             else
-                System.out.println("Errado.");
+                System.out.println("Errado");
             
         }
         
@@ -48,13 +48,13 @@ public class Quiz {
     
     public static List<Questao> geraPerguntas(){
          Questao questao1 = new Questao("Qual o nome do composto H2SO4 ?","Ácido sulfúrico","Ácido hiposulfuroso",
-                "Ácido sulfuroso","Cloreto de Sódio","Ácido sulfúrico", "Ciências");
+                "Ácido sulfuroso","Cloreto de Sódio","A", "Ciências");
         
         Questao questao2 = new Questao("Em Jogos Vorazes qual o pássaro é o símbolo do filme?", "Águia","Tordo",
-        "Pombo", "Canário","Tordo", "Filmes");
+        "Pombo", "Canário","B", "Filmes");
         
         Questao questao3 = new Questao("Ana tem 12 anos e flavia tem o dobro da idade da ana, e jorge tem o dobro da idade de flavia. Qual a idade de jorge??",
-        "48", "12", "24", "6", "48","Matemática");
+        "48", "12", "24", "6", "A","Matemática");
         
         List<Questao> questoes = new ArrayList<Questao>();
         questoes.add(questao1);

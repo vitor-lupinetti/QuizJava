@@ -22,7 +22,7 @@ public class Questao {
      * @return the pergunta
      */
     public Questao(String pergunta, String alternativa1, String alternativa2, String alternativa3,
-            String alternativa4, String alternativaCorreta, String tema){
+            String alternativa4, String alternativaCerta, String tema){
         this.setPergunta(pergunta);
         this.setAlternativa1(alternativa1);
         this.setAlternativa2(alternativa2);
