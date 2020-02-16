@@ -34,7 +34,7 @@ public class Quiz {
             System.out.println("Digite a alternativa que você considerar correta: ");
             String alternativaEscolhida = scan.nextLine();
             
-            if(questao.getAlternativaCerta().equals(alternativaEscolhida)){
+            if(questao.getAlternativaCerta().equalsIgnoreCase(alternativaEscolhida)){
                 System.out.println("Correto.");
             }
             else
